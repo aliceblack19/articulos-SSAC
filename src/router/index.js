@@ -22,7 +22,7 @@ const routes = [{
         path: '/registro_usuarios',
         name: 'RegistroUsuarios',
         component: () =>
-            import ( /*registro de usuarios*/ '../views/RegistroUsuarios.vue')
+            import ( /*registro de usuarios*/ '../views/RegitroUsuarios.vue')
     }
 ]
 
