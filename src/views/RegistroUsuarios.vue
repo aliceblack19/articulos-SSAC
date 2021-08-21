@@ -1,7 +1,7 @@
 <template>
     <form id="app" @submit="checkForm" action="" method="post">
     <p>
-        <label for="age">Documento:</label>
+        <label for="documento">Documento:</label>
         <input type="number" name="documento" id="documento" v-model="documento" min="0" required>
     </p>
     <p>
@@ -10,16 +10,19 @@
     </p>
 
     <p>
-        <label for="age">Correo electronico:</label>
+        <label for="email">Correo electronico:</label>
         <input type="email" name="email" id="email" v-model="email" required>
+    </p>
+    <p>
+        <label for="password">:</label>
+        <input type="password" name="password" id="password" v-model="email" required>
     </p>
 
     <p>
-        <label for="movie">Favorite Movie</label>
-        <select name="movie" id="movie" v-model="movie">
-        <option>Star Wars</option>
-        <option>Vanilla Sky</option>
-        <option>Atomic Blonde</option>
+        <label for="rol">elige rol:</label>
+        <select name="rol" id="rol" v-model="rol">
+        <option>1. Cliente</option>
+        <option>2. Empleado</option>
         </select>
     </p>
 
