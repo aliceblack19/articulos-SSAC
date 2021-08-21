@@ -22,7 +22,13 @@ const routes = [{
         path: '/registro_usuarios',
         name: 'RegistroUsuarios',
         component: () =>
-            import ( /*registro de usuarios*/ '../views/RegitroUsuarios.vue')
+            import ( /*registro de usuarios*/ '../views/RegistroUsuarios.vue')
+    },
+    {
+        path: '/login',
+        name: 'Login',
+        component: () =>
+            import ( /*login*/ '../views/Login.vue')
     }
 ]
 
