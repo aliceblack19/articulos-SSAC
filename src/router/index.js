@@ -29,7 +29,19 @@ const routes = [{
         name: 'Login',
         component: () =>
             import ( /*login*/ '../views/Login.vue')
-    }
+    },
+    {
+        path: '/rol',
+        name: 'Rol',
+        component: () =>
+            import ( /*rol*/ '../views/Rol.vue')
+    },
+    {
+        path: '/categorias',
+        name: 'Categorias',
+        component: () =>
+            import ( /*categorias*/ '../views/Categorias.vue')
+    },
 ]
 
 const router = new VueRouter({
