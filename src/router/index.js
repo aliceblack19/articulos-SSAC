@@ -25,6 +25,12 @@ const routes = [{
             import ( /*registro de usuarios*/ '../views/RegistroUsuarios.vue')
     },
     {
+        path: '/nuevo_articulo',
+        name: 'NuevoArticulo',
+        component: () =>
+            import ( /*registro de nuevos articulos*/ '../views/NuevoArticulo.vue')
+    },
+    {
         path: '/login',
         name: 'Login',
         component: () =>

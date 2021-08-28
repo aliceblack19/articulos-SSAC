@@ -5,6 +5,10 @@
       <router-link to="/Login">Login</router-link> |
       <router-link to="/Categorias">Categorias</router-link><br>
       <router-link to="/Rol">rol</router-link> 
+      <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link> |
+      <router-link to="/registro_usuarios">Registro de usuarios</router-link> |
+      <router-link to="/nuevo_articulo">Nuevo Articulo</router-link>
     </div>
     <router-view/>
   </div>
