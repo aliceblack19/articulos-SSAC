@@ -9,20 +9,12 @@
             </div>
         </div>
     </div>
-    <div class="btn-group" role="group"><br>
-    <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-      Rol
-    </button><br>
-    <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-      <li><a class="dropdown-item" href="#">Empleado</a></li>
-      <li><a class="dropdown-item" href="#">administrador</a></li>  
-    </ul>
-  </div>
-    <p>
-        <label for="id">:</label><br>
-        <input type="nombre" name="nombre" id="nombre" v-model="id" required>
-    </p>
-    <button type="button" class="btn btn-primary btn-lg">enviar</button>
+    
+                <div class="input-group mb-3 ">
+                    <span class="input-group-text text-primary" id="basic-addon1">Rol</span>
+                    <input class="form-control" type="text" name="documento" id="documento" required>
+                </div>
+    <button type="button" class="btn btn-primary btn-lg">Guardar</button>
     
 </section>
     </main>
