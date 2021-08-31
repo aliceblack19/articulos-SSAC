@@ -28,12 +28,12 @@
                     Datos almacenados correctamente...
                 </div>
                 <div class="alert alert-danger" role="alert" v-if="error">
-                    Datos no ingresados...
+                    usuario ya se encuentra registrado...
                 </div>
             </div>
             <div class="col-md-3 align-self-center">
                 <input type="submit" class="btn btn-primary mb-3 w-100" value="Guardar">
-                <a class="btn btn-primary mb-3 w-100" href="xxxxxxxxx">Iniciar sesión</a>
+                <router-link class="btn btn-primary mb-3 w-100" to="/login">Iniciar sesion</router-link>
             </div> 
         </form>
     </main>
