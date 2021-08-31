@@ -9,16 +9,15 @@
             </div>
         </div>
     </div>
-    <p>
-        <label for="id">:</label><br>
-        <input type="nombre" name="nombre" id="nombre" v-model="id" required>
-    </p>
-    <p>
-        <label for="id">:</label><br>
-        <input type="nombre" name="nombre" id="nombre" v-model="id" required>
-    </p>
-    
-    <button type="button" class="btn btn-primary btn-lg">enviar</button>
+    <div class="input-group mb-3 ">
+                    <span class="input-group-text text-primary" id="basic-addon1">Categoria</span>
+                    <input class="form-control" type="text" name="documento" id="documento" required>
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text text-primary" id="basic-addon1">Descripcion </span>
+                    <input class="form-control"  type="text" name="nombres" id="password" required>
+                </div>
+                <button type="button" class="btn btn-primary btn-lg">Guardar</button>
     
 </section>
     </main>

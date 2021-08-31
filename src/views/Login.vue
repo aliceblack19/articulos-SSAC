@@ -9,7 +9,16 @@
             </div>
         </div>
     </div>
-    <img src="src/assets/imagen3.jpg" class="img-fluid" alt="...">
+                <div class="input-group mb-3 ">
+                    <span class="input-group-text text-primary" id="basic-addon1">Usuario</span>
+                    <input class="form-control" type="text" name="documento" id="documento" required>
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text text-primary" id="basic-addon1">Contraseña </span>
+                    <input class="form-control"  type="text" name="nombres" id="password" required>
+                </div>
+                <button type="button" class="btn btn-primary btn-lg">iniciar seccion</button>
+    
     </section>
 
 <section class="container-fluid mt-5">
