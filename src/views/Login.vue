@@ -9,16 +9,17 @@
             </div>
         </div>
     </div>
+    <form method="POST" @submit.prevent="logen()">
                 <div class="input-group mb-3 ">
                     <span class="input-group-text text-primary" id="basic-addon1">Usuario</span>
-                    <input class="form-control" type="text" name="documento" id="documento" required>
+                    <input class="form-control" type="text" name="usuario" id="usuario" v-model="usuario" required>
                 </div>
                 <div class="input-group mb-3">
                     <span class="input-group-text text-primary" id="basic-addon1">Contraseña </span>
-                    <input class="form-control"  type="text" name="nombres" id="password" required>
+                    <input class="form-control"  type="text" name="contraseña" id="contraseña" v-model="contraseña" required>
                 </div>
-                <button type="button" class="btn btn-primary btn-lg">iniciar seccion</button>
-    
+                <button type="submit" class="btn btn-primary btn-lg">iniciar seccion</button>
+    </form>
     </section>
 
 <section class="container-fluid mt-5">
@@ -44,7 +45,30 @@
 
 <script>
 export default {
-
+    data(){
+        return{
+            usuario:null,
+            contraseña:null
+        }
+    },
+    methods:{
+        logen(){
+            const peticion=new XMLHttpRequest();
+            peticion.onreadystatechange=function(){
+                if(this.readyState ==4 && this.status ==200){
+                    let respuesta =JSON.parse(this.response)
+                    console.log(respuesta);
+                }
+                
+            }
+            peticion.open('POST',this.$store.state.rootpath+'api/login');
+            const usuarioycontrseña={
+                usuario:this.usuario,
+                password:this.contraseña
+            }
+            peticion.send(JSON.stringify(usuarioycontrseña));
+        }
+    }
 }
 </script>
 

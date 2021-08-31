@@ -5,7 +5,7 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
     state: {
-        rootpath: 'http://localhost/ED2/proyectossac/'
+        rootpath: 'http://localhost/proyecto/articulosSsac_php/'
     },
     mutations: {},
     actions: {},
