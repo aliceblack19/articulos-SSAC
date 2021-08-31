@@ -11,14 +11,14 @@
     </div>
     <form method="POST" @submit.prevent="logen()">
                 <div class="input-group mb-3 ">
-                    <span class="input-group-text text-primary" id="basic-addon1">Usuario</span>
+                    <span class="input-group-text text-primary" id="basic-addon1">Email</span>
                     <input class="form-control" type="text" name="usuario" id="usuario" v-model="usuario" required>
                 </div>
                 <div class="input-group mb-3">
-                    <span class="input-group-text text-primary" id="basic-addon1">Contraseña </span>
-                    <input class="form-control"  type="text" name="contraseña" id="contraseña" v-model="contraseña" required>
+                    <span class="input-group-text text-primary" id="basic-addon1" >Contraseña </span>
+                    <input class="form-control"  type="password" name="contraseña" maxlenght="20" placeholder="contraseña " v-model="contraseña" required= required>
                 </div>
-                <button type="submit" class="btn btn-primary btn-lg">iniciar seccion</button>
+                <button type="submit" class="btn btn-primary btn-lg">iniciar sesion</button>
     </form>
     </section>
 
